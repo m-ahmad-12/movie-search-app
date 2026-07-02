@@ -1,0 +1,138 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.searchBar input {
+  width: 400px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.searchBar input:focus {
+  border-color: #e50914;
+}
+
+.searchBar button {
+  padding: 12px 24px;
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.searchBar button:hover {
+  background-color: #b20710;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addBtn {
+  width: 100%;
+  padding: 8px;
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.addBtn:hover {
+  background-color: #b20710;
+}
+
+.addBtn:disabled {
+  background-color: #444;
+  cursor: default;
+}
+
+.message {
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 1.1rem;
+  margin-top: 60px;
+}
+.trending {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.trending p {
+  color: #aaaaaa;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.chip {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border: 1px solid #333;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.chip:hover {
+  background-color: #e50914;
+  border-color: #e50914;
+}
